@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "types": ["element-plus/global", "node", "pinia-plugin-persist"],
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": false,//取消严格检查，先这样吧
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "typings/**/*"],
+  "allowJs": true,
+  "references": [{
+    "path": "./tsconfig.node.json"
+  }]
+}
