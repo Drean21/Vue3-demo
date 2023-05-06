@@ -7,7 +7,7 @@ import router from './router/router.js';
 
 const app = express()
 // app.use(express.static(path.join(__dirname, 'dist')));
-// 获取类似于 __dirname 的路径
+// 获取类似于 __dirname 的路径,重定向主页到Vue项目打包好的dist目录
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
